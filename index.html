@@ -19,19 +19,29 @@
     <div class="container">
       <div id="main" class="card card-body">
         <h2 class="title">Add Item</h2>
-        <form class="form-inline mb-3">
-          <input type="text " class="form-control mr-2" />
-          <input type="button" class="btn btn-dark" value="submit" />
+        <form class="form-inline mb-3" id="form">
+          <input id="userInput" type="text " class="form-control mr-2" />
+          <input type="submit" class="btn btn-dark" value="submit" />
         </form>
         <ul id="items" class="list-group">
-          <li class="list-group-item">Item 1</li>
-          <li class="list-group-item">Item 2</li>
-          <li class="list-group-item">Item 3</li>
-          <li class="list-group-item">Item 3</li>
+          <li class="list-group-item">Item 1 <button class="btn btn-danger btn-sm float-right delete">X</button> </li>
+          <li class="list-group-item">Item 2 <button class="btn btn-danger btn-sm float-right delete">X</button> </li>
+          <li class="list-group-item">Item 3 <button class="btn btn-danger btn-sm float-right delete">X</button> </li>
+          <li class="list-group-item">Item 4 <button class="btn btn-danger btn-sm float-right delete">X</button> </li>
+
+         
         </ul>
+
+        <!-- <button onclick="btnClick()" class="btn btn-dark btn-block">
+          Click here
+        </button> -->
+
+        <!-- <button  class="btn btn-dark btn-block">
+          Click here
+        </button> -->
       </div>
     </div>
 
-    <script src="./app.js"></script>
+    <script src="./events.js"></script>
   </body>
 </html>
